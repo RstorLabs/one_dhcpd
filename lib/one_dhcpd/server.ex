@@ -78,7 +78,7 @@ defmodule OneDHCPD.Server do
 
     socket_opts = [
       :binary,
-      {:bind_to_device, ifname},
+      #{:bind_to_device, ifname},
       {:broadcast, true},
       {:active, true}
     ]
